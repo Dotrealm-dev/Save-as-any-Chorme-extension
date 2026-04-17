@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Saver Pro</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 300px;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f0f13;
+      color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6c63ff 0%, #3ecfcf 100%);
+      padding: 18px 20px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-icon {
+      font-size: 28px;
+    }
+
+    .header-text h1 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .header-text p {
+      font-size: 11px;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+
+    .section {
+      padding: 14px 18px 10px;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .format-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .format-card {
+      background: #1a1a24;
+      border: 1px solid #2a2a3a;
+      border-radius: 10px;
+      padding: 10px 12px;
+      cursor: default;
+      transition: border-color 0.2s;
+    }
+
+    .format-card:hover {
+      border-color: #6c63ff;
+    }
+
+    .format-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #a78bfa;
+    }
+
+    .format-desc {
+      font-size: 10px;
+      color: #666;
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    .tip-box {
+      margin: 8px 18px 14px;
+      background: #1a1a24;
+      border: 1px solid #2a2a3a;
+      border-left: 3px solid #6c63ff;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .tip-box p {
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .tip-box strong {
+      color: #c4b5fd;
+    }
+
+    .footer {
+      background: #0a0a10;
+      padding: 8px 18px;
+      text-align: center;
+      font-size: 10px;
+      color: #444;
+      border-top: 1px solid #1a1a24;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-icon">🖼️</div>
+    <div class="header-text">
+      <h1>Image Saver Pro</h1>
+      <p>บันทึกรูปภาพทุกรูปแบบด้วย คลิกขวา</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">รูปแบบที่รองรับ</div>
+    <div class="format-grid">
+      <div class="format-card">
+        <div class="format-name">PNG</div>
+        <div class="format-desc">โปร่งใส คุณภาพสูงสุด ไม่สูญเสียข้อมูล</div>
+      </div>
+      <div class="format-card">
+        <div class="format-name">JPG</div>
+        <div class="format-desc">ขนาดเล็ก เหมาะกับรูปถ่ายทั่วไป</div>
+      </div>
+      <div class="format-card">
+        <div class="format-name">WebP</div>
+        <div class="format-desc">สำหรับเว็บ ขนาดเล็กกว่า JPG ~30%</div>
+      </div>
+      <div class="format-card">
+        <div class="format-name">BMP</div>
+        <div class="format-desc">ไม่บีบอัด ใช้กับโปรแกรม Windows</div>
+      </div>
+      <div class="format-card" style="grid-column: 1 / -1;">
+        <div class="format-name">AVIF</div>
+        <div class="format-desc">รูปแบบล่าสุด คุณภาพสูง ขนาดเล็ก (Chrome/Edge)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <p>💡 <strong>วิธีใช้:</strong> คลิกขวาบนรูปภาพใดก็ได้ แล้วเลือก <strong>"💾 บันทึกรูปภาพเป็น..."</strong> จากนั้นเลือกรูปแบบที่ต้องการ</p>
+  </div>
+
+  <div class="footer">Image Saver Pro v1.0 · สร้างด้วย ❤️</div>
+
+</body>
+</html>
